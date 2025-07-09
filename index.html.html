@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yagna Sowmya Sri – Data Engineer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.css">
+  <script type="module" src="https://unpkg.com/phosphor-icons"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #0f0f2d, #1a1a40);
+      color: white;
+      overflow-x: hidden;
+    }
+    .preloader {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background: #000;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+    .logo {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #0ff;
+    }
+    .progress-container {
+      width: 80%;
+      height: 10px;
+      background: #222;
+    }
+    .progress-bar {
+      width: 0%;
+      height: 100%;
+      background: #0ff;
+    }
+    .hidden { display: none; }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+    }
+    .cta {
+      margin-top: 2rem;
+      padding: 10px 20px;
+      background: #0ff;
+      color: #000;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: transform 0.3s;
+    }
+    .cta:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #0ff;
+    }
+    .spline iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      margin-top: 2rem;
+    }
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 50px 20px;
+    }
+    .profile-pic {
+      border-radius: 50%;
+      border: 4px solid #0ff;
+      width: 150px;
+      height: 150px;
+    }
+    .about-right {
+      max-width: 600px;
+      padding: 20px;
+    }
+    .skills i {
+      font-size: 2rem;
+      margin: 10px;
+    }
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+    .project-card {
+      width: 280px;
+      margin: 10px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+    }
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+    }
+    .contact input, .contact textarea {
+      width: 90%;
+      max-width: 500px;
+      margin: 10px 0;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.1);
+      color: white;
+    }
+    .contact button {
+      padding: 10px 20px;
+      background: #0ff;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .contact button:hover {
+      transform: scale(1.1);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="preloader">
+    <div class="logo">Milad</div>
+    <div class="progress-container">
+      <div class="progress-bar"></div>
+    </div>
+  </div>
+
+  <main id="main-content" class="hidden">
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Hi, I am Yagna Sowmya Sri – Data Engineer (AI/ML)</h1>
+        <p>Scalable ETL & ML Pipelines | AWS, Azure, Spark, Kafka | Python, SQL | Cloud Data Lakes & Warehouses</p>
+        <a href="#contact" class="cta">Hire Me</a>
+      </div>
+      <div class="spline">
+        <iframe src='https://my.spline.design/orb-NOXfXQ71yiE5f5EPKeWaiFkR/'></iframe>
+      </div>
+    </section>
+
+    <section class="about">
+      <img src="images/profile.png" class="profile-pic" alt="Profile">
+      <div class="about-right">
+        <p>With 3+ years of experience, I specialize in transforming chaotic, raw data into clean, actionable insights using scalable cloud-native platforms. From designing ETL and streaming pipelines in Spark and Kafka to deploying ML workflows in AWS and Azure, I bring both engineering muscle and analytical finesse...</p>
+        <div class="skills">
+          <i class="ph ph-react-logo"></i>
+          <i class="ph ph-python-logo"></i>
+          <i class="ph ph-sparkle"></i>
+          <i class="ph ph-database"></i>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects">
+      <div class="project-card">Project 1</div>
+      <div class="project-card">Project 2</div>
+      <div class="project-card">Project 3</div>
+      <div class="project-card">Project 4</div>
+    </section>
+
+    <section class="contact" id="contact">
+      <form>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <div class="socials">
+        <a href="https://github.com/Sowmya0602">GitHub</a>
+        <a href="https://www.linkedin.com/in/yagna-sowmya-sri-chilukuri-18355b283/">LinkedIn</a>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p>&copy; 2025 Yagna Sowmya Sri</p>
+    </footer>
+  </main>
+
+  <script>
+    gsap.to(".progress-bar", {
+      width: "100%",
+      duration: 2,
+      ease: "power2.out",
+      onComplete: () => {
+        gsap.to(".preloader", {
+          opacity: 0,
+          scale: 0.9,
+          duration: 1,
+          onComplete: () => {
+            document.querySelector(".preloader").style.display = "none";
+            document.querySelector("#main-content").classList.remove("hidden");
+          }
+        });
+      }
+    });
+
+    gsap.from(".hero h1", {opacity: 0, y: 50, duration: 1.5});
+    gsap.from(".hero .cta", {scale: 0.9, duration: 1, repeat: -1, yoyo: true});
+  </script>
+</body>
+</html>
